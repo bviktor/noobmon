@@ -6,7 +6,7 @@ DATE_QUERY=$(date '+%Y-%m-%d %H:%M:%S')
 DATE_WEEK=$(date '+%Y-%W')
 
 REPORT_DIR='/opt/noobmon/reports'
-mkdir -p $(dirname ${REPORT})
+mkdir -p ${REPORT_DIR}
 
 REPORT_GPU="${REPORT_DIR}/gpu-${DATE_WEEK}.csv"
 if [ ! -e ${REPORT_GPU} ]
